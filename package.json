@@ -1,0 +1,32 @@
+{
+  "name": "golf-charity-platform",
+  "version": "1.0.0",
+  "description": "Fintech-grade golf charity subscription platform with auditable prize draws",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "build:server": "npm --prefix server run build",
+    "build:client": "npm --prefix client run build",
+    "build": "npm run build:server && npm run build:client",
+    "start:server": "npm --prefix server start",
+    "typecheck": "npm --prefix server run typecheck && npm --prefix client run typecheck"
+  },
+  "keywords": [
+    "golf",
+    "charity",
+    "fintech",
+    "subscription",
+    "prize-draw",
+    "graphql",
+    "react",
+    "typeorm",
+    "stripe"
+  ],
+  "author": "Golf Charity Team",
+  "license": "UNLICENSED"
+}
